@@ -1,0 +1,1 @@
+console.log('%c Framework work with PHP >= 7.0.1', 'background: #222; color: #bada55; font-size: 20px;');
