@@ -11,7 +11,7 @@ class App
     static function getDatabase()
     {
         if (!self::$db) {
-            self::$db = new Database('root', '', 'dbriche'); // username, password, name of the database
+            self::$db = new Database('root', '', 'dbname'); // username, password, name of the database
         }
         return self::$db;
     }
