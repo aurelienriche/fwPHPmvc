@@ -14,10 +14,12 @@ class Controller
             else:
                 echo 'An error occured : ' . $err_msg;
             endif;
+            ini_set("log_errors", 1);
+            ini_set("error_log", APP . 'logs/error.log');
+            error_log( "Number of exception: " . $err_no . '. Code ERROR : ' . $err_msg);
             echo "</pre></code>";
             die();
         }
-
         set_error_handler('ErrorHandler');
     }
 

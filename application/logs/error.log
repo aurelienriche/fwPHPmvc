@@ -1,0 +1,12 @@
+[05-Feb-2018 11:10:30 Europe/Paris] Number of exception: 2. Code ERROR : Division by zero
+[05-Feb-2018 11:12:06 Europe/Paris] Database exception: SQLSTATE[HY000] [1049] Unknown database 'sk_bas'
+[05-Feb-2018 11:12:18 Europe/Paris] Number of exception: 2. Code ERROR : Division by zero
+[05-Feb-2018 11:12:58 Europe/Paris] Number of exception: 2. Code ERROR : Division by zero
+[08-Feb-2018 10:56:36 Europe/Paris] Number of exception: 8. Code ERROR : Undefined variable: rep
+[08-Feb-2018 11:06:39 Europe/Paris] Number of exception: 2. Code ERROR : require(class/HtmlComponent.php): failed to open stream: No such file or directory
+[08-Feb-2018 11:06:56 Europe/Paris] Number of exception: 8. Code ERROR : Undefined variable: html
+[08-Feb-2018 11:08:36 Europe/Paris] Number of exception: 8. Code ERROR : Undefined variable: html
+[08-Feb-2018 11:08:51 Europe/Paris] Number of exception: 8. Code ERROR : Undefined variable: html
+[08-Feb-2018 15:53:32 Europe/Paris] Number of exception: 2. Code ERROR : A non-numeric value encountered
+[30-Apr-2018 09:51:03 Europe/Paris] Database exception: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+

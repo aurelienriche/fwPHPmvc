@@ -2,7 +2,6 @@
 
 class Verification
 {
-
     public function notEmpty(...$VarToCheck)
     {
         $bool = true;

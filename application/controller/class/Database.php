@@ -15,6 +15,9 @@ class Database
             echo "<pre><code class='error'>";
             echo 'An error occurred while trying to connect to the database. Check the file : "/application/controller/class/App.php". Error code : ' . '<b>' . $e->getMessage() . '</b>';
             echo "</pre></code>";
+            ini_set("log_errors", 1);
+            ini_set("error_log", APP . 'logs/error.log');
+            error_log("Database exception: " . $e->getMessage());
             die();
         }
     }

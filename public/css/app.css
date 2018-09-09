@@ -6,6 +6,16 @@ html, body {
     margin: 0;
 }
 
+::selection {
+    background-color: #1D9E74;
+    color: white;
+}
+
+::-moz-selection {
+    background-color: #1D9E74;
+    color: white;
+}
+
 code {
     display: block;
     padding: 12px;
@@ -37,7 +47,7 @@ code:before {
     margin-bottom: 24px;
 }
 
-.alert p:last-child{
+.alert p:last-child {
     margin-bottom: 0;
     line-height: 24px;
 }
@@ -111,11 +121,11 @@ code:before {
     font-size: 100%;
     padding: 5px 20px 10px 20px;
     color: #fff;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     text-decoration: none;
     font-weight: normal;
     font-family: "Nunito", sans-serif;
-    box-shadow: 0px 1px 2px -1px rgba(255,255,255,0.5) inset, 0px -2px 0px 0px rgba(0,0,0,0.1) inset;
+    box-shadow: 0px 1px 2px -1px rgba(255, 255, 255, 0.5) inset, 0px -2px 0px 0px rgba(0, 0, 0, 0.1) inset;
     vertical-align: middle;
     margin: 10px;
 }

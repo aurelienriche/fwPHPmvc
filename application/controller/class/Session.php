@@ -86,7 +86,7 @@ class Session
         }
     }
 
-    public function displayFlash()
+    public function htmlFlash()
     {
         if (isset($_SESSION['flash']) AND !empty($_SESSION['flash'])) {
 
@@ -96,6 +96,26 @@ class Session
                 echo '</div>';
             endforeach;
 
+        }
+    }
+
+    public function setSession($value ,$name, $other = null)
+    {
+        if(isset($other) AND !empty($other)){
+            $_SESSION[$name][$other] = $value;
+        } else {
+            $_SESSION[$name] = $value;
+        }
+    }
+
+    public function sessionValue($name)
+    {
+        if(isset($_SESSION[$name])){
+            echo $_SESSION[$name];
+        } else {
+            echo "<pre><code class='error'>";
+            print_r('$_SESSION does not exist. Try to set a session var and debug again.');
+            echo "</pre></code>";
         }
     }
 

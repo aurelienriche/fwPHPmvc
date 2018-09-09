@@ -9,7 +9,7 @@ class Str
      */
     public function random($length)
     {
-        $alphabet = "0123456789azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN";
+        $alphabet = "azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN";
         return substr(str_shuffle(str_repeat($alphabet, $length)), 0, $length);
     }
 
@@ -20,6 +20,16 @@ class Str
     public function randomNum($length)
     {
         $alphabet = "0123456789azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN0123456789";
+        return substr(str_shuffle(str_repeat($alphabet, $length)), 0, $length);
+    }
+
+    /**
+     * @param $length
+     * @return bool|string
+     */
+    public function randomSpecial($length)
+    {
+        $alphabet = "0123456789azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN&é([-|è`_ç^à@)°]=+}$*µ!§:/;.,?<>";
         return substr(str_shuffle(str_repeat($alphabet, $length)), 0, $length);
     }
 
